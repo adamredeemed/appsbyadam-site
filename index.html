@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Apps by Adam: an app for every problem</title><meta name="description" content="Adam builds one app a week with AI, in public. See the apps you can use today and the ones being built."><link rel="canonical" href="https://appsbyadam.app/">
+<meta property="og:title" content="Apps by Adam: an app for every problem"><meta property="og:description" content="Adam builds one app a week with AI, in public. See the apps you can use today and the ones being built."><meta property="og:url" content="https://appsbyadam.app/">
+<meta property="og:image" content="https://appsbyadam.app/assets/logo-512.png"><meta name="twitter:card" content="summary">
+<link rel="icon" href="/assets/logo-256.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+:root{--ink:#0E0F12;--ink2:#17191e;--paper:#F5F3EE;--card:#ffffff;--line:#e2ded4;--mute:#5f5d57;--lime:#C8F031;
+--display:"Space Grotesk",system-ui,sans-serif;--body:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"JetBrains Mono",ui-monospace,Menlo,monospace}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 var(--body)}
+a{color:inherit}img{max-width:100%}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:max(20px,env(safe-area-inset-left,0px))}
+header.top{background:var(--ink);color:var(--paper)}
+header.top .wrap{display:flex;align-items:center;gap:20px;padding-block:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 18px var(--display)}
+.logo img{width:34px;height:34px;border-radius:8px}
+nav.links{margin-left:auto;display:flex;gap:18px;font:500 14px var(--mono)}
+nav.links a{text-decoration:none;opacity:.85}nav.links a:hover,nav.links a[aria-current]{opacity:1;color:var(--lime)}
+.hero{background:var(--ink);color:var(--paper);padding-block:56px 72px}
+.hero h1{font:700 clamp(36px,6vw,64px)/1.02 var(--display);margin:0 0 18px;letter-spacing:-.02em;max-width:14ch;text-wrap:balance}
+.cursor{display:inline-block;width:.5em;height:.9em;background:var(--lime);vertical-align:-.08em;margin-left:.08em;animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}@media (prefers-reduced-motion:reduce){.cursor{animation:none}}
+.hero p{font-size:19px;max-width:52ch;color:#cfccc4;margin:0 0 26px}
+.btn{display:inline-block;background:var(--lime);color:var(--ink);font:700 15px var(--mono);padding:12px 20px;border-radius:10px;text-decoration:none}
+.btn.ghost{background:none;color:var(--paper);border:1px solid #3a3d45;margin-left:8px}
+section.block{padding-block:56px}
+.eyebrow{font:700 12px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin:0 0 6px}
+h2{font:700 30px/1.15 var(--display);margin:0 0 8px;letter-spacing:-.01em}
+.sub{color:var(--mute);margin:0 0 28px;max-width:60ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.app{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.app .h{display:flex;align-items:center;gap:12px}
+.app .ic{width:44px;height:44px;border-radius:11px;background:var(--ink);color:var(--lime);display:grid;place-items:center;font:700 18px var(--display);flex:none;overflow:hidden}
+.app .ic img{width:100%;height:100%;object-fit:cover}
+.app h3{font:700 19px var(--display);margin:0}
+.app p{margin:0;color:#3d3b37;font-size:15px}
+.tag{font:700 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:6px;align-self:flex-start}
+.tag.live{background:var(--ink);color:var(--lime)}.tag.wip{background:#ebe8e0;color:var(--mute)}
+.app .btn{margin-top:auto;align-self:flex-start;font-size:13px;padding:9px 14px}
+.featured .app{background:var(--ink);color:var(--paper);border-color:var(--ink)}.featured .app p{color:#cfccc4}
+.building .app{padding:16px}.building .app h3{font-size:17px}
+.posts{display:grid;gap:14px;max-width:760px}
+.post{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;text-decoration:none}
+.post h3{font:700 21px var(--display);margin:0 0 4px}.post p{margin:0;color:var(--mute)}
+.date{font:500 12px var(--mono);color:var(--mute)}
+article{max-width:680px;padding-block:48px 64px}
+article h1{font:700 clamp(32px,5vw,48px)/1.08 var(--display);margin:6px 0 18px;letter-spacing:-.02em;text-wrap:balance}
+article h2{font-size:24px;margin:32px 0 8px}article p,article li{font-size:18px}article a{color:var(--ink);text-decoration-color:#9bbb20;text-decoration-thickness:2px}
+.draft{background:#fff4c2;border:1px solid #e6d27a;padding:8px 12px;border-radius:8px;font:500 13px var(--mono)}
+.signup{background:var(--ink);color:var(--paper);border-radius:18px;padding:28px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+.signup h2{color:var(--paper);font-size:24px;margin:0}.signup p{margin:4px 0 0;color:#cfccc4}
+footer{border-top:1px solid var(--line);padding-block:28px 40px;color:var(--mute);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+@media (max-width:560px){nav.links{gap:12px;font-size:13px}.btn.ghost{margin:10px 0 0}}
+</style></head><body>
+<header class="top"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo-256.png" alt="">Apps by Adam</a><nav class="links"><a href="/" aria-current="page">Apps</a><a href="/blog/">Blog</a><a href="mailto:support@appsbyadam.app">Contact</a></nav></div></header>
+<section class="hero"><div class="wrap"><p class="eyebrow" style="color:var(--lime)">Apps by Adam</p>
+<h1>An app for every problem<span class="cursor" aria-hidden="true"></span></h1>
+<p>I'm Adam. I build one app a week with AI, in public. A real problem, the app I built for it, and the app doing the job.</p>
+<a class="btn" href="#available">See the apps</a><a class="btn ghost" href="/blog/">Read the blog</a></div></section>
+<section class="block featured" id="available"><div class="wrap"><p class="eyebrow">Available now</p><h2>Use these today</h2>
+<p class="sub">Ready for you right now.</p><div class="grid"><div class="app"><div class="h"><div class="ic"><img src="/assets/logo-256.png" alt=""></div><h3>Apps by Adam Club</h3></div><span class="tag live">Available now</span><p>Build your first app in 7 days with an AI helper, a step-by-step path and the Launch Kit. Club $9/mo, Pro $199/mo.</p><a class="btn" href="https://www.skool.com/apps-by-adam-7858">Join on Skool →</a></div></div></div></section>
+<section class="block building" id="building"><div class="wrap"><p class="eyebrow">Building</p><h2>On the workbench</h2>
+<p class="sub">19 apps in progress. Some ship soon, some get merged. Want one first? Email <a href="mailto:support@appsbyadam.app">support@appsbyadam.app</a>.</p>
+<div class="grid"><div class="app"><div class="h"><div class="ic">P</div><h3>Podcast Studio</h3></div><span class="tag wip">Building</span><p>One place for podcasters to plan, make, grow and earn from their show. New name coming.</p></div><div class="app"><div class="h"><div class="ic"><img src="/assets/logos/hooktotake.png" alt=""></div><h3>HookToTake</h3></div><span class="tag wip">Building</span><p>Shows short videos that are doing well, then helps you make your own version.</p></div><div class="app"><div class="h"><div class="ic">L</div><h3>Launchloom</h3></div><span class="tag wip">Building</span><p>Helps you pick a topic, write an ebook, sell it on a simple page, and post about it.</p></div><div class="app"><div class="h"><div class="ic">D</div><h3>Demoforge</h3></div><span class="tag wip">Building</span><p>Turns app screenshots into slick 3D demo videos.</p></div><div class="app"><div class="h"><div class="ic"><img src="/assets/logos/playlume.png" alt=""></div><h3>Playlume</h3></div><span class="tag wip">Building</span><p>Hosts your videos and turns viewers into leads.</p></div><div class="app"><div class="h"><div class="ic"><img src="/assets/logos/funnelume.png" alt=""></div><h3>Funnelume</h3></div><span class="tag wip">Building</span><p>Builds sales pages with video built in.</p></div><div class="app"><div class="h"><div class="ic">S</div><h3>Setivra</h3></div><span class="tag wip">Building</span><p>An AI chat helper that talks to new leads, books calls and follows up.</p></div><div class="app"><div class="h"><div class="ic">O</div><h3>Orvelume</h3></div><span class="tag wip">Building</span><p>Helps plan ads: what to say, who to show them to, and what happens next.</p></div><div class="app"><div class="h"><div class="ic">C</div><h3>Curatelume</h3></div><span class="tag wip">Building</span><p>A neat home for all your pictures and videos for marketing.</p></div><div class="app"><div class="h"><div class="ic">T</div><h3>Traction Desk</h3></div><span class="tag wip">Building</span><p>Writes marketing ideas for each app every day. You say yes or no. It never posts.</p></div><div class="app"><div class="h"><div class="ic"><img src="/assets/logos/leadmorrow.png" alt=""></div><h3>Leadmorrow</h3></div><span class="tag wip">Building</span><p>Finds local businesses to sell to and writes the outreach.</p></div><div class="app"><div class="h"><div class="ic"><img src="/assets/logos/goldforge.png" alt=""></div><h3>Goldforge</h3></div><span class="tag wip">Building</span><p>Helps you find a good app idea and plan it from start to finish.</p></div><div class="app"><div class="h"><div class="ic">B</div><h3>Bopumi</h3></div><span class="tag wip">Building</span><p>Turns an idea into a clear project board.</p></div><div class="app"><div class="h"><div class="ic"><img src="/assets/logos/daymori.svg" alt=""></div><h3>Daymori</h3></div><span class="tag wip">Building</span><p>An AI planner that builds your day for you.</p></div><div class="app"><div class="h"><div class="ic">S</div><h3>Screen Designer</h3></div><span class="tag wip">Building</span><p>AI that designs app screens for you. New name coming.</p></div><div class="app"><div class="h"><div class="ic"><img src="/assets/logos/camp-connect.png" alt=""></div><h3>Camp Connect</h3></div><span class="tag wip">Building</span><p>Helps churches run youth camp: sign-ups, schedules, messages and payments.</p></div><div class="app"><div class="h"><div class="ic"><img src="/assets/logos/scripture-scholar.png" alt=""></div><h3>Scripture Scholar</h3></div><span class="tag wip">Building</span><p>A Bible trivia game that never ends.</p></div><div class="app"><div class="h"><div class="ic"><img src="/assets/logos/sneakerflow.png" alt=""></div><h3>SneakerFlow</h3></div><span class="tag wip">Building</span><p>Checks what an item sells for on eBay, Poshmark, Mercari and StockX.</p></div><div class="app"><div class="h"><div class="ic"><img src="/assets/logos/furnitureflow.png" alt=""></div><h3>FurnitureFlow</h3></div><span class="tag wip">Building</span><p>Runs a furniture flipping business.</p></div></div></div></section>
+
+
+<footer><div class="wrap"><span>© 2026 Apps by Adam · An app for every problem.</span>
+<span><a href="mailto:support@appsbyadam.app">support@appsbyadam.app</a> · <a href="https://www.instagram.com/appsbyadam/">Instagram @appsbyadam</a></span></div></footer>
+</body></html>
