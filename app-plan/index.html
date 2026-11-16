@@ -207,7 +207,9 @@ const USERS = {me:"", clients:" My clients use the client-facing screen without 
 const DEV = {phone:" It must work well on a phone.", computer:" It's used mostly on a computer, so use the full screen width."};
 const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 function plan(who, job, users, device, name) {
- const j = JOBS[job], w = who.trim().replace(/^(i run|i have|i am|i'm|my)\s+/i, "").replace(/^(a|an)\s+/i, "") || "business";
+ const j = JOBS[job], raw = who.trim().replace(/^(i run|i have|i own|i am|i'm|i work as|my)\s+/i, "").replace(/^(a|an)\s+/i, "") || "business";
+ // a role ("fitness coach") reads as "my work as a fitness coach"; a business ("cleaning business") stays "my cleaning business"
+ const w = /business|shop|studio|salon|company|agency|store|podcast|channel|brand|gym|clinic|practice|team|restaurant|cafe|bakery/i.test(raw) ? raw : `work as ${/^[aeiou]/i.test(raw) ? "an" : "a"} ${raw}`;
  const title = name.trim() || "Your app";
  return {title, sentence:`An app that helps me ${j.does}, without ${j.pain}.`, screens:j.screens,
   prompt:j.prompt(w) + USERS[users] + DEV[device], today:j.today};
@@ -226,7 +228,8 @@ document.getElementById("f").addEventListener("submit", e => {
  document.getElementById("cp").addEventListener("click", ev => { navigator.clipboard.writeText(p.prompt).then(() => ev.target.textContent = "Copied"); });
  out.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"});
 });
-window.__planSelftest = () => { const p = plan("I run a cleaning business", "quote", "clients", "phone", ""); return p.prompt.startsWith("Build an app for my cleaning business") && p.screens.length === 3 && p.title === "Your app"; };
+window.__planSelftest = () => { const p = plan("I run a cleaning business", "quote", "clients", "phone", ""), r = plan("fitness coach", "content", "me", "phone", ""), e = plan("I'm an editor", "follow", "me", "phone", "");
+ return p.prompt.startsWith("Build an app for my cleaning business") && r.prompt.startsWith("Build a content calendar for my work as a fitness coach") && e.prompt.includes("my work as an editor") && p.screens.length === 3 && p.title === "Your app"; };
 </script>
 </main>
 <footer><div class="wrap"><p class="big" aria-hidden="true">apps by adam<span class="cur"></span></p>
