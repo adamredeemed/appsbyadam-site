@@ -1,0 +1,38 @@
+/* The shared sign-up form (signup.js). Colours come from each app: --sf-bg, --sf-ink, --sf-accent, --sf-on, --sf-mute. */
+.sf-shade{--sf-bg:#121419;--sf-ink:#F5F3EE;--sf-accent:#C8F031;--sf-on:#0B0C0F;--sf-mute:#9C9A93;
+position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;background:rgba(2,4,8,.72);padding:16px;animation:sf-in .2s ease-out}
+.sf-shade[hidden]{display:none}
+html.sf-open{overflow:hidden}
+@keyframes sf-in{from{opacity:0}}
+.sf-box{width:min(920px,100%);min-height:min(600px,88vh);max-height:calc(100dvh - 32px);overflow:auto;display:grid;grid-template-columns:1fr 1fr;border-radius:28px;background:var(--sf-bg);color:var(--sf-ink);
+border:1px solid color-mix(in srgb,var(--sf-accent) 40%,transparent);box-shadow:0 40px 90px rgba(0,0,0,.55),0 0 60px color-mix(in srgb,var(--sf-accent) 18%,transparent);animation:sf-pop .28s cubic-bezier(.2,.9,.3,1.2)}
+@keyframes sf-pop{from{transform:scale(.96);opacity:0}}
+.sf-box.sf-nopic{grid-template-columns:1fr;width:min(520px,100%)}
+.sf-pic{background-color:var(--sf-bg);background-repeat:no-repeat;background-position:center 62%;background-size:140% auto;min-height:100%}
+.sf-side{display:flex;flex-direction:column;justify-content:center;padding:44px 40px;text-align:center;font-family:Inter,system-ui,sans-serif}
+.sf-step[hidden]{display:none}
+.sf-ask{font:800 32px/1.1 "Space Grotesk",system-ui,sans-serif;letter-spacing:-.02em;margin:0 0 24px;text-wrap:balance}
+.sf-offer{font:800 60px/.95 "Space Grotesk",system-ui,sans-serif;color:var(--sf-accent);margin:0 0 12px;letter-spacing:-.03em;text-wrap:balance}
+.sf-offer.sf-small{font-size:46px}
+.sf-sub{font-size:18px;color:var(--sf-mute);margin:0 0 22px}
+.sf-pick{display:block;width:100%;min-height:52px;margin:0 0 12px;padding:14px 18px;border-radius:999px;border:2px solid var(--sf-accent);background:transparent;color:var(--sf-ink);
+font:700 17px/1.2 Inter,system-ui,sans-serif;cursor:pointer;transition:background .15s,transform .12s}
+.sf-pick:hover,.sf-pick:focus-visible{background:color-mix(in srgb,var(--sf-accent) 16%,transparent);outline:none}
+.sf-pick:active{transform:scale(.98)}
+.sf-side input[type=email]{width:100%;padding:17px 20px;border-radius:16px;border:2px solid color-mix(in srgb,var(--sf-mute) 45%,transparent);background:color-mix(in srgb,var(--sf-ink) 6%,var(--sf-bg));
+color:var(--sf-ink);font-size:18px;margin:0 0 10px;box-sizing:border-box}
+.sf-side input[type=email]:focus{outline:none;border-color:var(--sf-accent)}
+.sf-trap{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.sf-go{width:100%;min-height:56px;padding:16px;border:0;border-radius:999px;background:var(--sf-accent);color:var(--sf-on);font:800 18px/1 Inter,system-ui,sans-serif;cursor:pointer;transition:transform .12s,filter .15s}
+.sf-go:hover{filter:brightness(1.08)}.sf-go:active{transform:scale(.98)}.sf-go.busy{opacity:.7;cursor:progress}
+.sf-go:focus-visible,.sf-no:focus-visible{outline:2px solid var(--sf-ink);outline-offset:3px}
+.sf-no{margin-top:14px;background:none;border:0;color:var(--sf-mute);font:600 15px Inter,system-ui,sans-serif;text-decoration:underline;cursor:pointer;min-height:44px}
+.sf-err{color:#ff8a8a;font-size:14px;min-height:18px;margin:0 0 8px}
+.sf-dots{display:flex;gap:6px;justify-content:center;margin-bottom:22px}
+.sf-dots i{width:28px;height:5px;border-radius:9px;background:color-mix(in srgb,var(--sf-mute) 35%,transparent)}.sf-dots i.on{background:var(--sf-accent)}
+@media (max-width:700px){
+ .sf-shade{padding:0;align-items:stretch}
+ .sf-box,.sf-box.sf-nopic{width:100vw;min-height:100dvh;border-radius:0;grid-template-columns:1fr;border:0}
+ .sf-pic{display:none}.sf-side{padding:36px 22px}.sf-offer{font-size:52px}.sf-ask{font-size:28px}
+}
+@media (prefers-reduced-motion:reduce){.sf-shade,.sf-box{animation:none}.sf-pick,.sf-go{transition:none}}

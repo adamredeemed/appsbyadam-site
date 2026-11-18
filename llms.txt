@@ -1,0 +1,28 @@
+# Apps by Adam
+
+> Apps by Adam builds simple apps for creators and small businesses: an app for every problem.
+
+## Pages
+
+- [Your app plan in 60 seconds · Apps by Adam](https://appsbyadam.app/app-plan/): Answer 5 questions and get a free one-page plan for your first app: what it does, its 3 screens, a build prompt and today's task.
+- [Build notes · Apps by Adam](https://appsbyadam.app/blog/): Weekly build notes: one problem, the app that solves it, and what broke.
+- [Bopumi: turn an idea into a project board · Apps by Adam](https://appsbyadam.app/bopumi/): Turns an idea into a clear project board.
+- [Camp Connect: run a church youth camp · Apps by Adam](https://appsbyadam.app/camp-connect/): Helps churches run youth camp: sign-ups, schedules, messages and payments.
+- [Curatelume: organize your marketing photos · Apps by Adam](https://appsbyadam.app/curatelume/): A neat home for all your pictures and videos for marketing.
+- [Daymori: plan your whole day · Apps by Adam](https://appsbyadam.app/daymori/): An AI planner that builds your day for you.
+- [Demoforge: turn screenshots into demo videos · Apps by Adam](https://appsbyadam.app/demoforge/): Turns app screenshots into slick 3D demo videos.
+- [Funnelume: build sales pages with video · Apps by Adam](https://appsbyadam.app/funnelume/): Builds sales pages with video built in.
+- [FurnitureFlow: flip furniture for profit · Apps by Adam](https://appsbyadam.app/furnitureflow/): Runs a furniture flipping business.
+- [Goldforge: find a good app idea · Apps by Adam](https://appsbyadam.app/goldforge/): Helps you find a good app idea and plan it from start to finish.
+- [HookToTake: remix videos that already work · Apps by Adam](https://appsbyadam.app/hooktotake/): Shows short videos that are doing well, then helps you make your own version.
+- [Apps by Adam: an app for every problem](https://appsbyadam.app/): Adam builds an app for every problem, with AI, in public. See the apps you can use today and the ones being built.
+- [Launchloom: write and sell an ebook · Apps by Adam](https://appsbyadam.app/launchloom/): Helps you pick a topic, write an ebook, sell it on a simple page, and post about it.
+- [Leadmorrow: find local businesses to sell to · Apps by Adam](https://appsbyadam.app/leadmorrow/): Finds local businesses to sell to and writes the outreach.
+- [Orvelume: plan your ads · Apps by Adam](https://appsbyadam.app/orvelume/): Helps plan ads: what to say, who to show them to, and what happens next.
+- [Playlume: turn video viewers into leads · Apps by Adam](https://appsbyadam.app/playlume/): Hosts your videos and turns viewers into leads.
+- [Podcast Studio: run a podcast from plan to paycheck · Apps by Adam](https://appsbyadam.app/podcast-studio/): One place for podcasters to plan, make, grow and earn from their show. New name coming.
+- [Screen Designer: design app screens · Apps by Adam](https://appsbyadam.app/screen-designer/): AI that designs app screens for you. New name coming.
+- [Scripture Scholar: play Bible trivia · Apps by Adam](https://appsbyadam.app/scripture-scholar/): A Bible trivia game that never ends.
+- [Setivra: answer new leads and book calls · Apps by Adam](https://appsbyadam.app/setivra/): An AI chat helper that talks to new leads, books calls and follows up.
+- [SneakerFlow: price sneakers before you resell · Apps by Adam](https://appsbyadam.app/sneakerflow/): Checks what an item sells for on eBay, Poshmark, Mercari and StockX.
+- [Traction Desk: get a marketing move every day · Apps by Adam](https://appsbyadam.app/traction-desk/): Writes marketing ideas for each app every day. You say yes or no. It never posts.

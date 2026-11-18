@@ -85,7 +85,7 @@ display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:28px;align-items:
 .chip.wip{color:var(--mute);border:1px solid var(--line2)}
 /* the building wall */
 .wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
-.app{position:relative;display:flex;flex-direction:column;gap:14px;padding:22px;border-radius:18px;background:var(--ink2);border:1px solid var(--line);overflow:hidden;min-width:0;
+.app{text-decoration:none;color:inherit;position:relative;display:flex;flex-direction:column;gap:14px;padding:22px;border-radius:18px;background:var(--ink2);border:1px solid var(--line);overflow:hidden;min-width:0;
 transition:border-color .25s,transform .25s}
 .app::before{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--x,50%) var(--y,0%),rgba(200,240,49,.10),transparent 60%);opacity:0;transition:opacity .25s;pointer-events:none}
 .app:hover{border-color:rgba(200,240,49,.35);transform:translateY(-3px)}.app:hover::before{opacity:1}
