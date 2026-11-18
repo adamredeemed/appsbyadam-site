@@ -36,3 +36,11 @@ color:var(--sf-ink);font-size:18px;margin:0 0 10px;box-sizing:border-box}
  .sf-pic{display:none}.sf-side{padding:36px 22px}.sf-offer{font-size:52px}.sf-ask{font-size:28px}
 }
 @media (prefers-reduced-motion:reduce){.sf-shade,.sf-box{animation:none}.sf-pick,.sf-go{transition:none}}
+/* the text step's consent box (unticked by default) and the corner x a test can try */
+.sf-side input[type=tel]{width:100%;padding:17px 20px;border-radius:16px;border:2px solid color-mix(in srgb,var(--sf-mute) 45%,transparent);background:color-mix(in srgb,var(--sf-ink) 6%,var(--sf-bg));color:var(--sf-ink);font-size:18px;margin:0 0 12px;box-sizing:border-box}
+.sf-side input[type=tel]:focus{outline:none;border-color:var(--sf-accent)}
+.sf-consent{display:flex;gap:10px;align-items:flex-start;text-align:left;font-size:12.5px;line-height:1.45;color:var(--sf-mute);margin:0 0 10px;cursor:pointer}
+.sf-consent input{width:20px;height:20px;flex:none;margin:1px 0 0;accent-color:var(--sf-accent)}
+.sf-box{position:relative}
+.sf-x{position:absolute;top:12px;right:14px;width:44px;height:44px;border:0;border-radius:50%;background:transparent;color:var(--sf-mute);font-size:28px;line-height:1;cursor:pointer}
+.sf-x:hover{color:var(--sf-ink)}
